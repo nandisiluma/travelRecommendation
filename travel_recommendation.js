@@ -1,6 +1,10 @@
 // --- Search functionality for navbar ---
 document.addEventListener('DOMContentLoaded', function() {
 	const form = document.getElementById('search-form') || document.querySelector('#navbar form');
+	if (!form) {
+		console.warn('Search form not found on page. Aborting search initialization.');
+		return;
+	}
 	const searchInput = document.getElementById('search-input') || form.querySelector('input[type="search"]');
 	const searchButton = document.getElementById('search-button') || form.querySelector('button[type="submit"]');
 	const clearButton = document.getElementById('clear-button') || form.querySelector('button[type="button"]');
@@ -143,3 +147,4 @@ document.addEventListener('DOMContentLoaded', function() {
 			});
 		}
 });
+
