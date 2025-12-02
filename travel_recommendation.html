@@ -2,20 +2,62 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-
         <title>Dora the Explorer</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div id="navbar">
-            <a href="home.html">Home</a>
-            <a href="aboutus.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
-            <form>
-                <input type="search" placeholder="Enter a destination or keyword">
-                <button>Search</button>
-                <button>Clear</button>
+            <a href="#main-content">Home</a>
+            <a href="#about-us">About Us</a>
+            <a href="#contact">Contact Us</a>
+            <form id="search-form">
+                <input id="search-input" type="search" placeholder="Enter a destination or keyword">
+                <button id="search-button" type="submit">Search</button>
+                <button id="clear-button" type="button">Clear</button>
             </form>
 
         </div>
+
+        <div id="main-content">
+            <h1>Travel Recommendations</h1>
+            <img src="travel.png" alt="Travel Image" style="width:100%;height:auto;">    
+            <p>Discover your next adventure with our personalized travel recommendations! Whether you're seeking a relaxing beach getaway, a cultural city tour, or an adventurous mountain trek, we've got you covered.
+                Our expert travel advisors analyze your preferences and interests to suggest destinations that match your travel style. Start your journey today and explore the world with confidence!</p>
+
+        
+            <div id="social-media">
+                <a href="https://www.facebook.com"><img src="Facebook.png" alt="Facebook" style="width:30px;height:30px;"></a>
+                <a href="https://www.twitter.com"><img src="twitter.png" alt="Twitter" style="width:30px;height:30px;"></a>
+                <a href="https://www.instagram.com"><img src="Instagram.png" alt="Instagram" style="width:30px;height:30px;"></a>
+            </div>
+        </div>
+
+    
+        <div id="about-us">
+            <h2>About Us</h2>
+            <p>We are a team of travel enthusiasts dedicated to helping you find the perfect destination for your next trip. With years of experience in the travel industry, we understand the importance of personalized
+                recommendations that cater to your unique preferences. Our mission is to make travel planning easy and enjoyable, so you can focus on creating unforgettable memories.</p>
+
+            <h3>Our Team</h3>
+            <ul>
+                <li>Jane Doe - Travel Advisor</li>
+                <li>John Smith - Destination Specialist</li>
+                <li>Emily Johnson - Customer Service</li>
+            </ul>
+        </div>
+
+        <div id="contact-us">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
     </body>
 </html>
