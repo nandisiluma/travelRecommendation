@@ -1,0 +1,136 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f8fb;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    background: #1e3a5c;
+    color: #fff;
+    padding: 16px 0 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(30,58,92,0.08);
+}
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+#navbar a:hover {
+    color: #ffd700;
+}
+#navbar form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+#navbar input[type="search"] {
+    padding: 7px 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+#navbar button {
+    padding: 7px 16px;
+    border: none;
+    border-radius: 4px;
+    background: #ffd700;
+    color: #1e3a5c;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 4px;
+    transition: background 0.2s;
+}
+#navbar button:hover {
+    background: #ffb300;
+}
+
+#main-content {
+    max-width: 900px;
+    margin: 32px auto 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(30,58,92,0.08);
+    padding: 32px 40px 24px 40px;
+}
+#main-content h1 {
+    color: #1e3a5c;
+    margin-bottom: 18px;
+}
+#main-content p {
+    color: #333;
+    font-size: 1.1em;
+}
+#main-content img {
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+
+#social-media {
+    margin-top: 18px;
+}
+#social-media a img {
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    transition: box-shadow 0.2s;
+}
+#social-media a img:hover {
+    box-shadow: 0 2px 8px #ffd700;
+}
+
+#about-us, #contact-us {
+    max-width: 900px;
+    margin: 32px auto 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(30,58,92,0.08);
+    padding: 32px 40px 24px 40px;
+}
+#about-us h2, #contact-us h2 {
+    color: #1e3a5c;
+}
+#about-us ul {
+    padding-left: 20px;
+}
+#about-us li {
+    margin-bottom: 6px;
+}
+
+#search-results {
+    max-width: 900px;
+    margin: 32px auto 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(30,58,92,0.08);
+    padding: 24px 40px 24px 40px;
+}
+#search-results > div {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 18px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(30,58,92,0.04);
+    padding: 12px 18px;
+}
+#search-results img {
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+#search-results h3 {
+    margin: 0 0 6px 0;
+    color: #1e3a5c;
+}
+#search-results p {
+    margin: 0;
+    color: #333;
+}
